@@ -46,6 +46,7 @@
 	<section class="rolls">
 		<h4>The two rolls will run below:</h4>
 		<script type="text/javascript">
+		window.onload=roll1();
 		function roll1() {
 			var numA = Math.floor(Math.random() * (6-1) + 1)
 			document.getElementById("roll1").value = numA;
