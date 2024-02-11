@@ -21,7 +21,7 @@
         .main-info h1 {
             margin: 0;
         }
-        .intro{
+        .intro, .rolls{
             background: #8FBC72;
             padding: 15px;
             margin-bottom: 10px;
@@ -39,6 +39,17 @@
 		<p>Hello, welcome to this dice rolling program. You can use this program to simulate
 		the roll of two dice. In many games, like Monopoly, two dice must be rolled at once. 
 		You can use the program below to simulate these rolls by using random numbers, as seen below.</p>
+        </section>
+
+	<section class="rolls">
+		<h4>The two rolls will run below:</h4>
+		<py-script>
+		import random
+		a = randint(1,6)
+		b = randint(1,6)
+		print(a)
+		print(b)
+		</py-script>
         </section>
 		
 	</div>
