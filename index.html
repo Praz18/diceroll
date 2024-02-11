@@ -45,23 +45,19 @@
 
 	<section class="rolls">
 		<h4>The two rolls will run below:</h4>
-		<button id="rollClick" onclick="rolls();">Click to Roll</button><br>
+		<button id="rollClick" onload="rolls();" onclick="rolls();">Click to Roll</button><br>
 		<p>Roll 1: </p><p id="roll1"> </p>
 		<p>Roll 2: </p><p id="roll2"> </p>
-		<p>Amount of Rolls: </p><p id="total"> </p>
         </section>
 		
 	</div>
 </body>
 <script>
-	const n = 0;
 	function rolls(){
 		num1 = Math.floor(Math.random() * 6) + 1;
 		num2 = Math.floor(Math.random() * 6) + 1;
-		n = n+1;
 		document.getElementById("roll1").innerHTML = num1;
 		document.getElementById("roll2").innerHTML = num2;
-		document.getElementById("total").innerHTML = n;
 	}
 </script>
 </html>
