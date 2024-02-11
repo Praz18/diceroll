@@ -1,6 +1,6 @@
-const button = document.getElementById("button");
-const roll1 = document.getElementById("roll1");
-const roll2 = document.getElementById("roll2");
+const button = document.getElementById("button").innerHTML;
+const roll1 = document.getElementById("roll1").innerHTML;
+const roll2 = document.getElementById("roll2").innerHTML;
 let num1;
 let num2;
 button.onclick = function(){
