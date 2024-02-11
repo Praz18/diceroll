@@ -44,13 +44,18 @@
 
 	<section class="rolls">
 		<h4>The two rolls will run below:</h4>
-		<py-script>
-		import random
-		a = randint(1,6)
-		b = randint(1,6)
-		print(a)
-		print(b)
-		</py-script>
+		<script type="text/javascript">
+		window.onload = roll1, roll2;
+		function roll1() {
+			var numA = Math.random()
+			document.getElementById("roll1").value = numA;
+		}
+		function roll2() {
+			var numB = Math.random()
+			document.getElementById("roll2").value = numB;
+		}
+		</script>
+		<p>id="roll1" id="roll2"</p>
         </section>
 		
 	</div>
