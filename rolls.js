@@ -1,4 +1,4 @@
-const button = document.getElementById("button").innerHTML;
+const button = document.getElementById("button");
 const roll1 = document.getElementById("roll1").innerHTML;
 const roll2 = document.getElementById("roll2").innerHTML;
 let num1;
