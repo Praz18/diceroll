@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" >
+    <meta charset="UTF-8" >
     <title>Dice Roller</title>
 	<style>
         body {
@@ -45,23 +45,10 @@
 
 	<section class="rolls">
 		<h4>The two rolls will run below:</h4>
-		<script type="text/javascript">
-		window.onload=roll1();
-		function roll1() {
-			var numA = Math.floor(Math.random() * (6-1) + 1)
-			document.getElementById("roll1").value = numA;
-		}
-		function roll2() {
-			var numB = Math.floor(Math.random() * (6-1) + 1)
-			document.getElementById("roll2").value = numB;
-		}
-		</script>
-		<p>
-			Roll 1 = 
-			<p id="roll1"></p>
-			Roll 2 = 
-			<p id="roll2"></p>
-		</p>
+		<script src="rolls.js"></script>
+		<button id="button">Click to Roll></button><br>
+		<p>Roll 1 =</p><label>id="roll1"</label><br>
+		<p>Roll 2 =</p><label>id="roll2"</label><br>
         </section>
 		
 	</div>
