@@ -53,8 +53,10 @@
 	<section class="rolls">
 		<h3><u>The two rolls will run below:</u></h3>
 		<p>Roll 1: </p> 
+		<p id="image1" ></p>
 		<p style="font-size:150%; font-weight: bold" id="roll1"></p>
 		<p>Roll 2: </p> 
+		<p id="image2" ></p>
 		<p style="font-size:150%; font-weight: bold" id="roll2"></p>
 		<button id="rollClick" autofocus onclick="rolls();">Click to Roll</button>
         </section>
@@ -65,7 +67,9 @@
 		num1 = Math.floor(Math.random() * 6) + 1;
 		num2 = Math.floor(Math.random() * 6) + 1;
 		document.getElementById("roll1").innerHTML = num1;
+		document.getElementById("image1").innerHTML = num1 + ".png";
 		document.getElementById("roll2").innerHTML = num2;
+		document.getElementById("image2").innerHTML = num2 + ".png";
 	}
 </script>
 </body>
